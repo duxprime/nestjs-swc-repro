@@ -1,0 +1,19 @@
+{
+    "name": "@nest-repro/utils",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "prebuild": "npm run clean-dist",
+        "build": "tsc",
+        "clean-dist": "rimraf ./dist"
+    },
+    "devDependencies": {
+        "rimraf": "^6.0.1",
+        "typescript": "^5.8.3"
+    },
+    "exports": {
+        ".": "./src/index.ts",
+        "./*": "./src/*/index.ts"
+    },
+    "license": "UNLICENSED"
+}

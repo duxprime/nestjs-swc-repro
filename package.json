@@ -1,0 +1,17 @@
+{
+    "name": "nest-swc-repro",
+    "version": "1.0.0",
+    "description": "Nest repro SWC error application.",
+    "private": true,
+    "scripts": {
+        "format": "npx prettier . --write",
+        "format-check": "npx prettier . --check"
+    },
+    "license": "UNLICENSED",
+    "workspaces": [
+        "projects/*"
+    ],
+    "devDependencies": {
+        "prettier": "3.5.3"
+    }
+}
